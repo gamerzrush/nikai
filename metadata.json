@@ -1,0 +1,5 @@
+{
+  "name": "Nik AI Chatbot",
+  "description": "A sleek, conversational AI chatbot named Nik, powered by Google's Gemini API. Engage in a fluid, real-time chat experience with a modern and intuitive user interface.",
+  "requestFramePermissions": []
+}
