@@ -1,0 +1,8 @@
+{
+  "name": "Nik AI Chatbot",
+  "description": "A sleek, conversational AI chatbot named Nik. Engage in a fluid, real-time chat experience, made by Nikshith.",
+  "prompt": "",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
