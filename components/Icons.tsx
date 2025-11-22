@@ -1,6 +1,10 @@
 import React from 'react';
 
+<<<<<<< HEAD
 export const NikAvatar: React.FC<{ className?: string }> = React.memo(({ className = 'w-10 h-10' }) => (
+=======
+export const NikAvatar: React.FC<{ className?: string }> = ({ className = 'w-10 h-10' }) => (
+>>>>>>> a33004e48aff2727052893d65efad48b7b8eaad0
     <div className={`flex-shrink-0 ${className}`}>
         <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
             <rect width="40" height="40" rx="20" fill="url(#avatar-gradient)"/>
@@ -15,6 +19,7 @@ export const NikAvatar: React.FC<{ className?: string }> = React.memo(({ classNa
             </defs>
         </svg>
     </div>
+<<<<<<< HEAD
 ));
 
 export const SendIcon: React.FC<{ className?: string }> = React.memo(({ className = 'w-6 h-6' }) => (
@@ -85,3 +90,20 @@ export const TrashIcon: React.FC<{ className?: string }> = React.memo(({ classNa
         <path fillRule="evenodd" d="M16.5 4.478v.227a48.816 48.816 0 013.878.512.75.75 0 11-.256 1.478l-.209-.035-1.005 13.006a.75.75 0 01-.742.742H5.625a.75.75 0 01-.742-.742L3.879 6.662l-.209.035a.75.75 0 01-.256-1.478A48.567 48.567 0 017.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 013.369 0c1.603.051 2.815 1.387 2.815 2.951zm-6.136-1.452a51.196 51.196 0 013.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 00-6 0v-.113c0-.794.609-1.428 1.364-1.452zm-.385 3.965a.75.75 0 01.75.75v10.5a.75.75 0 01-1.5 0v-10.5a.75.75 0 01.75-.75zm4.5 0a.75.75 0 01.75.75v10.5a.75.75 0 01-1.5 0v-10.5a.75.75 0 01.75-.75z" clipRule="evenodd" />
     </svg>
 ));
+=======
+);
+
+export const SendIcon: React.FC<{ className?: string }> = ({ className = 'w-6 h-6' }) => (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className={className}>
+        <path d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z" />
+    </svg>
+);
+
+export const TypingIndicator: React.FC = () => (
+    <div className="flex items-center space-x-1 p-3">
+        <span className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0s' }}></span>
+        <span className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></span>
+        <span className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></span>
+    </div>
+);
+>>>>>>> a33004e48aff2727052893d65efad48b7b8eaad0

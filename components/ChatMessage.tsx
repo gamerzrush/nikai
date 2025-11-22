@@ -1,8 +1,13 @@
 import React from 'react';
+<<<<<<< HEAD
 import ReactMarkdown from 'https://esm.sh/react-markdown@9?bundle';
 import remarkGfm from 'https://esm.sh/remark-gfm@4?bundle';
 import { Sender, type Message } from '../types';
 import { NikAvatar, TypingIndicator, FileIcon } from './Icons';
+=======
+import { Sender, type Message } from '../types';
+import { NikAvatar, TypingIndicator } from './Icons';
+>>>>>>> a33004e48aff2727052893d65efad48b7b8eaad0
 
 interface ChatMessageProps {
   message: Message;
@@ -13,6 +18,7 @@ const ChatMessage: React.FC<ChatMessageProps> = ({ message, isTyping = false }) 
   const isBot = message.sender === Sender.BOT;
 
   return (
+<<<<<<< HEAD
     <div className={`group flex w-full items-start gap-3 ${isBot ? 'justify-start' : 'justify-end'}`}>
       {isBot && <NikAvatar className="w-8 h-8 self-end" />}
       <div className={`flex flex-col gap-2 max-w-xl ${isBot ? 'items-start' : 'items-end'}`}>
@@ -50,9 +56,23 @@ const ChatMessage: React.FC<ChatMessageProps> = ({ message, isTyping = false }) 
             )}
           </div>
         )}
+=======
+    <div className={`flex w-full items-end gap-3 ${isBot ? 'justify-start' : 'justify-end'}`}>
+      {isBot && <NikAvatar className="w-8 h-8 self-end" />}
+      <div className={`max-w-xl px-4 py-3 rounded-2xl ${
+          isBot 
+            ? 'bg-gray-700 text-gray-200 rounded-bl-none'
+            : 'bg-blue-600 text-white rounded-br-none'
+      }`}>
+        {isTyping && message.text.length === 0 ? <TypingIndicator /> : <p className="whitespace-pre-wrap">{message.text}</p>}
+>>>>>>> a33004e48aff2727052893d65efad48b7b8eaad0
       </div>
     </div>
   );
 };
 
+<<<<<<< HEAD
 export default React.memo(ChatMessage);
+=======
+export default ChatMessage;
+>>>>>>> a33004e48aff2727052893d65efad48b7b8eaad0

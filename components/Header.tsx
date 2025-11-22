@@ -1,4 +1,5 @@
 import React from 'react';
+<<<<<<< HEAD
 import { NikAvatar, MenuIcon } from './Icons';
 
 interface HeaderProps {
@@ -17,10 +18,26 @@ const Header: React.FC<HeaderProps> = ({ onToggleMenu, sessionTitle }) => {
                             <h1 className="text-lg font-bold text-slate-900 dark:text-white truncate">{sessionTitle}</h1>
                             <p className="text-sm text-green-500 dark:text-green-400 flex items-center">
                                 <span className="w-2 h-2 bg-green-500 dark:bg-green-400 rounded-full mr-1.5 animate-pulse"></span>
+=======
+import { NikAvatar } from './Icons';
+
+const Header: React.FC = () => {
+    return (
+        <header className="fixed top-0 left-0 right-0 z-10 bg-gray-800/80 backdrop-blur-sm border-b border-gray-700">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="flex items-center justify-between h-16">
+                    <div className="flex items-center space-x-4">
+                        <NikAvatar />
+                        <div>
+                            <h1 className="text-lg font-bold text-white">Nik</h1>
+                            <p className="text-sm text-green-400 flex items-center">
+                                <span className="w-2 h-2 bg-green-400 rounded-full mr-1.5"></span>
+>>>>>>> a33004e48aff2727052893d65efad48b7b8eaad0
                                 Online
                             </p>
                         </div>
                     </div>
+<<<<<<< HEAD
                     <button
                         onClick={onToggleMenu}
                         className="p-2 rounded-full text-slate-500 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700"
@@ -28,10 +45,16 @@ const Header: React.FC<HeaderProps> = ({ onToggleMenu, sessionTitle }) => {
                     >
                         <MenuIcon className="w-6 h-6" />
                     </button>
+=======
+>>>>>>> a33004e48aff2727052893d65efad48b7b8eaad0
                 </div>
             </div>
         </header>
     );
 };
 
+<<<<<<< HEAD
 export default React.memo(Header);
+=======
+export default Header;
+>>>>>>> a33004e48aff2727052893d65efad48b7b8eaad0
